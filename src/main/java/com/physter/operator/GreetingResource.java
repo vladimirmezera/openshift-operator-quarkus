@@ -1,4 +1,4 @@
-package com.instana.operator.example;
+package com.physter.operator;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

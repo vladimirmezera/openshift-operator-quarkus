@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: operator-physter
+spec:
+  selector:
+    matchLabels:
+      app: operator-physter
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: operator-physter
+    spec:
+      serviceAccountName: operator-physter
+      containers:
+      - image: quarkus-quickstart/getting-started
+        name: operator-physter
+        imagePullPolicy: IfNotPresent

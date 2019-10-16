@@ -1,4 +1,4 @@
-package com.instana.operator.example;
+package com.physter.operator.example;
 
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Test;
